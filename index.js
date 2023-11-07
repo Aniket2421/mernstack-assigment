@@ -3,10 +3,12 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const Products = require("./Models/ProductSchema.js");
-const User = require("./models/UserSchema.js");
+const User = require("./Models/UserSchema.js");
 require("dotenv").config();
 const app = express();
 const cors = require("cors");
+
+console.log(User);
 
 app.use(express.json());
 app.use(
